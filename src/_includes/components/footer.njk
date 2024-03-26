@@ -1,0 +1,13 @@
+<footer class="bg-eisfuchs-blue text-white p-4 mt-auto">
+    <div
+        class="container mx-auto text-center flex flew-row items-center justify-around ">
+        <!-- Footer content goes here -->
+        <nav>
+            <ul class="flex flex-row justify-between gap-7">
+                {% for item in collections.footerNav %}
+                <li><a class="hover:underline" href="{{ item.url }}">{{ item.data.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+        <div>© 2023 Eisfuchs</div>
+</footer>

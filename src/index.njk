@@ -1,0 +1,95 @@
+---
+title: Eisfuchs
+description: Wir produzieren und liefern Eiswürfel und Crushed Eis in bester Qualität. Du bist dir nicht sicher? Zögere nicht uns anzuschreiben, wir kommen mit einem Probepaket bei Dir vorbei.
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Home
+  order: 0
+---
+
+<!-- Logo Header with content-->
+<div class="bg-eisfuchs-blue h-60">
+  <div class="container flex flex-col items-center mx-auto">
+    <div class="bg-white w-44 h-44 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-96 lg:h-96 rounded-full overflow-hidden flex items-center
+        justify-center p-4 sm:p-8 md:p-12 lg:p-16 mt-8">
+      <img src="/img/eisfuchs-logo.png" alt="Description" class="w-auto h-auto max-w-full max-h-full p-3"></div>
+      {% include "components/alpine_modal.njk" %}
+      <div class="flex flex-col items-center mt-12 px-8">
+        <h1 class="text-3xl font-light">Eisfuchs Leipzig</h1>
+        <p class="text-center w-auto mt-6 font-light">
+          Du hast eine Bar, einen Club oder betreibst eine Cateringfirma?</br>
+        Du hast ein Restaurant, einen Biergarten oder planst Events?</br>
+      Du hast eine private Sommerfeier, einen Geburtstag oder eine Hochzeit?</br>
+    Gute Eiswürfel sind essenziell - ob im Drink, zum Kühlen oder Dekorieren!
+  </p>
+  <p class="text-center w-auto mt-6">
+    <span class="text-eisfuchs-blue font-bold text-xl">direkt und regional</span>
+    -
+    <span class="font-bold text-xl">in Leipzig für Leipzig</span>
+  </p>
+</div>
+<h2 class="text-3xl font-light mt-16 mb-4">Unser Sortiment</h2>
+<!-- Container for all product cards -->
+<div
+  class="container mx-auto p-6 w-9/12">
+  <!-- Grid container -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    {% for product in products.products %}
+      <!-- Product card -->
+      <div
+        class="flex flex-col bg-white shadow-lg rounded-lg overflow-hidden hover:rotate-1">
+        <!-- Product image -->
+        <a href="/produkte/{{ product.name | slugify }}/">
+          <div class="flex-shrink-0">
+            <img class="w-full" src="/img/{{ product.image }}" alt="{{ product.name }}"></div>
+            <!-- Product details -->
+            <div class="flex-1 p-4 {{ 'bg-' + product.color }} text-{{ product.textColor }} flex flex-col justify-between">
+              <h2 class="font-bold text-lg mb-2">{{ product.name }}</h2>
+              <p class="flex-1 text-sm italic mb-8">{{ product.price }}</p>
+              <p class="flex-1 text-sm">{{ product.description }}</p>
+            </a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <!-- Quality -->
+  <div class="container w-8/12">
+    <h2 class="text-3xl font-light mt-16 mb-4 text-center mb-4">Unsere Qualität</h2>
+    <p class="font-light pb-6">Neben der Form eines Eiswürfels, welche eine ästhetische Frage ist, ist die technische
+      Qualität die Ausschlaggebende. Hier entscheidet die Temperatur der Würfel sowie die Oberflächengröße über die Qualität.</p>
+    <p class="font-light pb-6">Unsere Eiswürfel haben eine Seitenlänge von 32mm (unter Kennern das XXL-Format) und je größer
+      ein Eiswürfel ist, desto geringer ist seine Oberfläche im Verhältnis zu seinem Volumen, unsere Würfel schmelzen somit
+      langsamer und halten Deine Getränke kühl ohne sofort zu verwässern.
+    </p>
+    <p class="font-light pb-6">Die Temperatur spielt bei uns besonders in der Herstellung eine wichtige Rolle, unsere
+      Premium-Eiswürfel werden nach der Produktion sofort schockgefrostet und danach in einem speziellen Verfahren bearbeitet.
+      Um eine längere „Lebensqualität“ unserer Eiswürfel zu gewährleisten lagern wir sie bei -20°C bis -25°C.</p>
+  </div>
+  <!-- Contact-->
+  <div class="lg:columns-2 mt-16 mb-16 w-8/12">
+    <div class="flex flex-col">
+      <h2 class="text-3xl font-light mb-4 mb-4">Kontakt</h2>
+      <p class="font-light mb-4 text-sm">
+          Eisfuchs - Dein Eis für Leipzig und Umgebung</br>
+        Aline Lutz und Christiane Bachl GbR</br>
+      Volbedingstraße 2</br>
+    04357 Leipzig</br></p>
+      <p class="font-light mb-4 text-sm">
+    Umsatzsteuer-Identifikationsnummer gemäß § 27 a</br>Umsatzsteuergesetz: UstID DE323545003</p>
+    <p class="font-light"><i class="fa fa-phone-square"></i>
+      <a href="tel:015738307268">Telefon<span>0157 38307268</span></a>
+    </p>
+    <p class="font-light"><i class="fa fa-envelope-square"></i><a href="mailto:info@eisfuchs-leipzig.de">info@eisfuchs-leipzig.de</a></p>
+    <p class="font-light"><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/eisfuchs_leipzig/" target="_blank">Instagram</a></p>
+    <p class="font-light"><i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com/eisfuchs.leipzig" target="_blank">Facebook</a></p>
+  </div>
+<div>
+  <iframe
+  frameborder="0"
+  height="300"
+  class="mt-12"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2491.193656317151!2d12.402310615764653!3d51.362736479611684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a6f80a9aaca367%3A0x6a331bcbdf41aae5!2sVolbedingstra%C3%9Fe%202%2C%2004357%20Leipzig!5e0!3m2!1sde!2sde!4v1579092048183!5m2!1sde!2sde"
+  style="border:0"
+  title="Google Maps"
+  width="100%"></iframe></div></div></div>

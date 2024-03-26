@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  {% include "../components/head.njk" %}
+  <body class="flex flex-col min-h-screen">
+    {% include "../components/navigation.njk" %}
+    <main class="flex-1">
+      <div class="flex h-32 bg-eisfuchs-blue text-white items-center justify-center ">
+        <h1 class="text-center text-3xl">{{title}}</h1>
+      </div>
+      <div class="p-2 md:p-8 lg:p-12 flex-1">
+        {{ content | safe }}
+      </div>
+      
+    </main>
+    <!-- Footer -->
+    {% include "../components/footer.njk" %}
+    <!-- Scripts -->
+    {% include "../components/scripts.njk" %}
+  </body>
+</html>

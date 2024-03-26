@@ -1,0 +1,28 @@
+{
+    "products": [
+        {
+            "name": "Massiv Eiswürfel 10 kg",
+            "price": "Preis auf Anfrage",
+            "description": "XXL Volleiswürfel 32mm Kantenlänge doppelt gefrostet.",
+            "image": "eis_1.jpg",
+            "color": "eisfuchs-blue",
+            "textColor": "white"
+        },
+        {
+            "name": "Crushed Ice 10 kg",
+            "price": "Preis auf Anfrage" ,
+            "description": "Diese Menge reicht für ca. 60 Caipis. Ideal zum Kühlen und Dekorieren von Buffets.",
+            "image": "eis_3.jpg",
+            "color": "white",
+            "textColor": "eisfuchs-blue"
+        },
+        {
+            "name": "Thermobox für 20 kg Inhalt",
+            "price": "Leihgebühr 10,00 € für 48h exkl. Sonntag",
+            "description": "In der hochwertigen Thermobox ist das Eis 24h haltbar. Bei verschmutzten, beschädigten oder nicht zurück gegebenen Thermoboxen berechnen wir 30€ netto.",
+            "image": "thermo.jpg",
+            "color": "eisfuchs-blue",
+            "textColor": "white"
+        }
+    ]
+}

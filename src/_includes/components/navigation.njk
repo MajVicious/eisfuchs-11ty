@@ -1,0 +1,37 @@
+<nav class="flex items-center justify-between flex-wrap px-5 py-3 border-b gap-5 dark:border-zinc-900">
+  {% set navPages = collections.all | eleventyNavigation %}
+  <ul class="flex items-center gap-3 flex-wrap">
+    {% for entry in navPages %}
+      <li class="inline relative group">
+        {% if entry.title == "Produkte" %}
+          <span class="uppercase text-sm py-1 px-2 rounded inline-block {% if (entry.url in page.url and entry.url != '/') or (page.url
+              == '/' and entry.url == '/') %} bg-eisfuchs-blue text-white {% else %} text-zinc-700 dark:text-zinc-200 hover:bg-zinc-100
+              dark:hover:bg-zinc-700 {% endif %}">
+            {{ entry.title }}
+          </span>
+        {% else %}
+          <a href="{{ entry.url }}" class="uppercase text-sm py-1 px-2 rounded inline-block
+              {% if (entry.url in page.url and entry.url != '/') or (page.url == '/' and entry.url == '/') %}
+                bg-eisfuchs-blue text-white
+              {% else %}
+                text-zinc-700 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-700
+              {% endif %}">
+            {{ entry.title }}
+          </a>
+          {% endif %}
+          {% if entry.title == "Produkte" %}
+            <ul class="absolute dropdown-enter bg-white shadow-md min-w-max mt-1 rounded">
+              {% for product in products.products %}
+                <li>
+                  <a href="/produkte/{{ product.name | slugify }}/" class="block px-4 py-2 hover:bg-gray-100">
+                    {{ product.name }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+    <!-- Additional elements -->
+  </nav>
