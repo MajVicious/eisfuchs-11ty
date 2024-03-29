@@ -20,10 +20,26 @@
                 "Für alkoholfreie Getränke im 0,3l Glas, wie zum Beispiel Cola oder Apfelschorle rechnen wir mit 3-4 Würfeln. Du erhältst davon also circa 35."
             ],
             "pricing": [
-                {"weight": 90, "netto": 1.25, "brutto": 1.48},
-                {"weight": 290, "netto": 1.20, "brutto": 1.43},
-                {"weight": 590, "netto": 1.13, "brutto": 1.34},
-                {"weight": 600, "netto": -1, "brutto": -1}
+                {
+                    "weight": 90,
+                    "netto": 1.25,
+                    "brutto": 1.48
+                },
+                {
+                    "weight": 290,
+                    "netto": 1.20,
+                    "brutto": 1.43
+                },
+                {
+                    "weight": 590,
+                    "netto": 1.13,
+                    "brutto": 1.34
+                },
+                {
+                    "weight": 600,
+                    "netto": -1,
+                    "brutto": -1
+                }
             ]
         },
         {
@@ -34,10 +50,33 @@
             "textColor": "eisfuchs-blue",
             "seoTitle": "Crushed Ice (10 kg) aus Leipzig bestellen",
             "pricing": [
-                {"weight": 90, "netto": 1.25, "brutto": 1.48},
-                {"weight": 290, "netto": 1.20, "brutto": 1.43},
-                {"weight": 590, "netto": 1.13, "brutto": 1.34},
-                {"weight": 600, "netto": -1, "brutto": -1}
+                {
+                    "weight": 90,
+                    "netto": 1.25,
+                    "brutto": 1.48
+                },
+                {
+                    "weight": 290,
+                    "netto": 1.20,
+                    "brutto": 1.43
+                },
+                {
+                    "weight": 590,
+                    "netto": 1.13,
+                    "brutto": 1.34
+                },
+                {
+                    "weight": 600,
+                    "netto": -1,
+                    "brutto": -1
+                }
+            ],
+            "longContent": [
+                "In Cocktails hat es einen Dekorations Effekt und zwischen das Eis passt weniger Flüssigkeit, so das der Alkohol im Cocktail genussvoller wird.",
+                "urch die gute Kühleigenschaft wird Crushed Ice also in der Gastronomie für Cocktails verwendet, aber auch für den Transport sowie das Lagern von Lebensmitteln.",
+                "Ein gutes Catering Buffet kommt ohne Crushed Ice nicht aus und auch der Sekt wird im Kühler damit perfekt kalt gehalten.",
+                "Man rechnet pro Cocktail mit 150-200 Gramm Crushed Ice - du bekommst also circa 50 Cocktails aus 10 kg Crushed Ice.",
+                "Selbstverständlich kommt es hier immer aus die Größe des Glases an. Unsere Angaben beziehen sich auf 0,3l Gläser."
             ]
         },
         {
@@ -46,7 +85,11 @@
             "image": "thermo.jpg",
             "color": "eisfuchs-blue",
             "textColor": "white",
-            "seoTitle": "Thermobox für 20 kg aus Leipzig bestellen"
+            "seoTitle": "Thermobox für 20 kg aus Leipzig bestellen",
+            "longContent": [
+                "Mit unseren stabilen, schwarzen Thermoboxen kannst du deine Eiswürfel oder dein Crushed Ice bedenkenlos kalt halten.",
+                "Sie fasst 20kg Eiswürfel oder 20kg Crushed Ice."
+            ]
         }
     ]
 }

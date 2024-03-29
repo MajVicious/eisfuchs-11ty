@@ -7,7 +7,7 @@
         </tr>
     </thead>
     <tbody>
-        {% for item in product.pricing %}
+        {% for item in shipping.costs %}
             <tr>
                 <td>bis {{ item.weight }} kg
                 </td>
@@ -15,8 +15,8 @@
                     <td>Auf Anfrage</td>
                     <td>Auf Anfrage</td>
                 {% else %}
-                    <td>{{ item.netto }} € / kg</td>
-                    <td>{{ item.brutto }} € / kg</td>
+                    <td>{{ item.netto }}€</td>
+                    <td>{{ item.brutto }}€</td>
                 {% endif %}
             </tr>   
         {% endfor %}
