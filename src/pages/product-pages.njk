@@ -12,28 +12,51 @@ eleventyComputed:
 ---
 
 <!-- Product Page Content -->
-<main class="container mx-auto p-6 min-h-screen">
-  <div
-    class="flex flex-col md:flex-row sm:flex-row-reverse">
-    <!-- Left Column: Product Information -->
-    <div class="md:flex-1 p-4">
+<main>
+  <div class="flex items-center bg-eisfuchs-blue h-56">
+    <div class="container mx-auto p-6">
       <h1 class="text-2xl font-bold mb-3">{{ product.name }}</h1>
-      <p class="mb-3">{{ product.description }}</p>
-      <div>
-        {% for paragraph in product.longContent %}
-          <p class="mb-4 font-light">{{ paragraph }}</p>
-        {% endfor %}
-      </div>
+      <p class="mb-3 text-white font-bold text-lg">{{ product.description }}</p>
     </div>
-    <!-- Right Column: Product Image -->
-    <div class="md:flex-1 flex-col p-4">
-      <img src="/img/{{ product.image }}" alt="{{ product.name }}" class="max-w-full h-auto rounded-md">
-      {% include "components/products_pricing_table.njk" %}
-      <div class="mt-10">
-        {% include "components/alpine_modal.njk" %}
-      </div>
-      
-    </div>
-    
   </div>
-</main>
+  <div
+    class="container mx-auto p-6">
+    <!-- Product Image and Pricing -->
+    <div
+      class="flex flex-col-reverse lg:flex-row md:flex-row sm:flex-col-reverse">
+      <!-- Left Column: Product Information -->
+      <div class="md:flex-1 pr-10">
+        <div class="divide-y divide-solid">
+          <h2 class="pt-4 text-lg font-bold">Preise</h2>
+          {% include "components/products_pricing_table.njk" %}
+          <h2 class="pt-4 text-lg font-bold">Lieferkosten</h2>
+          {% include "components/products_shipping_table.njk" %}
+        </div>
+        <div class="mt-10">
+            {% include "components/alpine_modal.njk" %}
+          </div>
+      </div>
+      <!-- Right Column: Product Image -->
+      <div class="md:flex-1 flex-col p-4">
+        <img src="/img/{{ product.image }}" alt="{{ product.name }}" class="max-w-full h-auto rounded-md">
+          
+        </div>
+      </div>
+      <!-- Product Long Content -->
+      <div class="felx flex-col items-center w-11/12 bg-eisfuchs-blue bg-slate-50 rounded-lg mt-10">
+        <div class="py-5 px-10">
+          <h2 class="pt-4 text-lg font-bold">{{ product.name }} im Detail:</h2>
+          <div class="pl-4 pt-5">
+            <ul class="list-outside list-disc">
+              {% for paragraph in product.longContent %}
+                <li class="mb-4 font-light">{{ paragraph }}</p>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="flex flex-col items-center mt-10">
+            {% include "components/alpine_modal.njk" %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
