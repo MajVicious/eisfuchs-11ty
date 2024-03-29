@@ -1,0 +1,24 @@
+<table class="table-auto w-full mt-5 font-light">
+    <thead>
+        <tr class="text-left">
+            <th>Gewicht</th>
+            <th>Netto</th>
+            <th>Brutto</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in product.pricing %}
+            <tr>
+                <td>bis {{ item.weight }} kg
+                </td>
+                {% if item.weight == 600 %}
+                    <td>Auf Anfrage</td>
+                    <td>Auf Anfrage</td>
+                {% else %}
+                    <td>{{ item.netto }}€ netto / kg</td>
+                    <td>{{ item.brutto }}€ brutto / kg</td>
+                {% endif %}
+            </tr>   
+        {% endfor %}
+    </tbody>
+</table>

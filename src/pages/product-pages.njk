@@ -7,28 +7,33 @@ pagination:
     addAllPagesToCollections: true
 permalink: "produkte/{{ product.name | slugify }}/"
 eleventyComputed:
-  pageTitle: "{{ product.name }}"
+  pageTitle: "{{ product.name }} aus Leipzig bestellen"
   pageDescription: "{{ product.description }}"
 ---
 
-{% set pageTitle = product.name %}
-{% set pageDescription = product.description %}
-
 <!-- Product Page Content -->
 <main class="container mx-auto p-6 min-h-screen">
-  <div class="flex flex-col md:flex-row">
-    
+  <div
+    class="flex flex-col md:flex-row sm:flex-row-reverse">
     <!-- Left Column: Product Information -->
     <div class="md:flex-1 p-4">
       <h1 class="text-2xl font-bold mb-3">{{ product.name }}</h1>
       <p class="mb-3">{{ product.description }}</p>
-      <p class="font-semibold">{{ product.price }}</p>
+      <div>
+        {% for paragraph in product.longContent %}
+          <p class="mb-4 font-light">{{ paragraph }}</p>
+        {% endfor %}
+      </div>
+    </div>
+    <!-- Right Column: Product Image -->
+    <div class="md:flex-1 flex-col p-4">
+      <img src="/img/{{ product.image }}" alt="{{ product.name }}" class="max-w-full h-auto rounded-md">
+      {% include "components/products_pricing_table.njk" %}
+      <div class="mt-10">
+        {% include "components/alpine_modal.njk" %}
+      </div>
+      
     </div>
     
-    <!-- Right Column: Product Image -->
-    <div class="md:flex-1 p-4">
-      <img src="/img/{{ product.image }}" alt="{{ product.name }}" class="max-w-full h-auto rounded-md">
-    </div>
-
   </div>
 </main>

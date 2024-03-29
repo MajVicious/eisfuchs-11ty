@@ -2,27 +2,51 @@
     "products": [
         {
             "name": "Massiv Eiswürfel 10 kg",
-            "price": "Preis auf Anfrage",
             "description": "XXL Volleiswürfel 32mm Kantenlänge doppelt gefrostet.",
             "image": "eis_1.jpg",
             "color": "eisfuchs-blue",
-            "textColor": "white"
+            "textColor": "white",
+            "seoTitle": "Massiv Eiswürfel (10 kg) aus Leipzig bestellen",
+            "units": 10,
+            "size": 32,
+            "longdrinks": 50,
+            "shortdrink": 160,
+            "longContent": [
+                "Neben der Form eines Eiswürfels, welche eine ästhetische Frage ist, ist die technische Qualität die Ausschlaggebende. Hier entscheidet die Temperatur der Würfel sowie die Oberflächengröße über die Qualität.",
+                "Unsere Eiswürfel haben eine Seitenlänge von 32mm (unter Kennern das XXL-Format) und je größer ein Eiswürfel ist, desto geringer ist seine Oberfläche im Verhältnis zu seinem Volumen, unsere Würfel schmelzen somit langsamer und halten Deine Getränke kühl ohne sofort zu verwässern.",
+                "Die Temperatur spielt bei uns besonders in der Herstellung eine wichtige Rolle, unsere Premium-Eiswürfel werden nach der Produktion sofort schockgefrostet und danach in einem speziellen Verfahren bearbeitet. Um eine längere „Lebensqualität“ unserer Eiswürfel zu gewährleisten lagern wir sie bei -20°C bis -25°C.",
+                "Man rechnet pro 0,3l Longdrink (z.B. Gin Tonic) mit 7-8 Eiswürfeln. Du kannst also circa 50 Longdrinks mixen.",
+                "Pro Shortdrink rechnet man mit 2 Eiswürfeln, hier liegst du also bei circa 160 Getränken.",
+                "Für alkoholfreie Getränke im 0,3l Glas, wie zum Beispiel Cola oder Apfelschorle rechnen wir mit 3-4 Würfeln. Du erhältst davon also circa 35."
+            ],
+            "pricing": [
+                {"weight": 90, "netto": 1.25, "brutto": 1.48},
+                {"weight": 290, "netto": 1.20, "brutto": 1.43},
+                {"weight": 590, "netto": 1.13, "brutto": 1.34},
+                {"weight": 600, "netto": -1, "brutto": -1}
+            ]
         },
         {
             "name": "Crushed Ice 10 kg",
-            "price": "Preis auf Anfrage" ,
             "description": "Diese Menge reicht für ca. 60 Caipis. Ideal zum Kühlen und Dekorieren von Buffets.",
             "image": "eis_3.jpg",
             "color": "white",
-            "textColor": "eisfuchs-blue"
+            "textColor": "eisfuchs-blue",
+            "seoTitle": "Crushed Ice (10 kg) aus Leipzig bestellen",
+            "pricing": [
+                {"weight": 90, "netto": 1.25, "brutto": 1.48},
+                {"weight": 290, "netto": 1.20, "brutto": 1.43},
+                {"weight": 590, "netto": 1.13, "brutto": 1.34},
+                {"weight": 600, "netto": -1, "brutto": -1}
+            ]
         },
         {
             "name": "Thermobox für 20 kg Inhalt",
-            "price": "Leihgebühr 10,00 € für 48h exkl. Sonntag",
             "description": "In der hochwertigen Thermobox ist das Eis 24h haltbar. Bei verschmutzten, beschädigten oder nicht zurück gegebenen Thermoboxen berechnen wir 30€ netto.",
             "image": "thermo.jpg",
             "color": "eisfuchs-blue",
-            "textColor": "white"
+            "textColor": "white",
+            "seoTitle": "Thermobox für 20 kg aus Leipzig bestellen"
         }
     ]
 }
