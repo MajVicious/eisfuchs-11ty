@@ -7,7 +7,7 @@ pagination:
     addAllPagesToCollections: true
 permalink: "produkte/{{ product.name | slugify }}/"
 eleventyComputed:
-  pageTitle: "{{ product.name }} aus Leipzig bestellen"
+  pageTitle: "{{ product.seoTitle }} | Eisfuchs"
   pageDescription: "{{ product.description }}"
 ---
 
@@ -16,7 +16,7 @@ eleventyComputed:
   <div class="flex items-center bg-eisfuchs-blue h-56">
     <div class="container mx-auto p-6">
       <h1 class="text-2xl font-bold mb-3">{{ product.name }}</h1>
-      <p class="mb-3 text-white font-bold text-lg">{{ product.description }}</p>
+      <p class="mb-3 text-white font-bold text-lg">{{ product.shortContent }}</p>
     </div>
   </div>
   <div
@@ -26,11 +26,13 @@ eleventyComputed:
       class="flex flex-col-reverse lg:flex-row md:flex-row sm:flex-col-reverse">
       <!-- Left Column: Product Information -->
       <div class="md:flex-1 pr-10">
-        <div class="divide-y divide-solid">
+        <div>
           <h2 class="pt-4 text-lg font-bold">Preise</h2>
           {% include "components/products_pricing_table.njk" %}
-          <h2 class="pt-4 text-lg font-bold">Lieferkosten</h2>
-          {% include "components/products_shipping_table.njk" %}
+          {% if product.name !== "Thermobox" %}
+            <h2 class="pt-4 text-lg font-bold">Lieferkosten</h2>
+            {% include "components/products_shipping_table.njk" %}
+          {% endif %}
         </div>
         <div class="mt-10">
             {% include "components/alpine_modal.njk" %}

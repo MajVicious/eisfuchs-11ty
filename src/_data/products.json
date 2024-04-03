@@ -1,16 +1,18 @@
 {
     "products": [
         {
-            "name": "Massiv Eiswürfel 10 kg",
-            "description": "XXL Volleiswürfel 32mm Kantenlänge doppelt gefrostet.",
+            "name": "Premium Volleiswürfel",
+            "description": "XXL Volleiswürfel mit 32mm Kantenlänge und doppelt gefrostet aus Leipzig » jetzt bestellen!",
+            "excerpt": "XXL Volleiswürfel mit 32mm Kantenlänge und doppelt gefrostet.",
             "image": "eis_1.jpg",
             "color": "eisfuchs-blue",
             "textColor": "white",
-            "seoTitle": "Massiv Eiswürfel (10 kg) aus Leipzig bestellen",
+            "seoTitle": "Premium-Volleiswürfel | Massiv-Eiswürfel aus Leipzig bestellen",
             "units": 10,
             "size": 32,
             "longdrinks": 50,
             "shortdrink": 160,
+            "shortContent": "XXL Volleiswürfel mit 32mm Kantenlänge und doppelt gefrostet.",
             "longContent": [
                 "Neben der Form eines Eiswürfels, welche eine ästhetische Frage ist, ist die technische Qualität die Ausschlaggebende. Hier entscheidet die Temperatur der Würfel sowie die Oberflächengröße über die Qualität.",
                 "Unsere Eiswürfel haben eine Seitenlänge von 32mm (unter Kennern das XXL-Format) und je größer ein Eiswürfel ist, desto geringer ist seine Oberfläche im Verhältnis zu seinem Volumen, unsere Würfel schmelzen somit langsamer und halten Deine Getränke kühl ohne sofort zu verwässern.",
@@ -43,12 +45,13 @@
             ]
         },
         {
-            "name": "Crushed Ice 10 kg",
-            "description": "Diese Menge reicht für ca. 60 Caipis. Ideal zum Kühlen und Dekorieren von Buffets.",
+            "name": "Crushed Ice",
+            "description": "Crushed Eis für Cocktails, zum Kühlen von Lebensmittel oder für den Gastronomiebetrieb  » jetzt bestellen!",
+            "excerpt": "Crushed Eis für Cocktails, zum Kühlen von Lebensmittel oder für den Gastronomiebetrieb.",
             "image": "eis_3.jpg",
             "color": "white",
             "textColor": "eisfuchs-blue",
-            "seoTitle": "Crushed Ice (10 kg) aus Leipzig bestellen",
+            "seoTitle": "Crushed Ice aus Leipzig bestellen",
             "pricing": [
                 {
                     "weight": 90,
@@ -71,6 +74,7 @@
                     "brutto": -1
                 }
             ],
+            "shortContent": "Für Cocktails, zum Kühlen von Lebensmittel oder für den Einsatz in der Gastronomie.",
             "longContent": [
                 "In Cocktails hat es einen Dekorations Effekt und zwischen das Eis passt weniger Flüssigkeit, so das der Alkohol im Cocktail genussvoller wird.",
                 "urch die gute Kühleigenschaft wird Crushed Ice also in der Gastronomie für Cocktails verwendet, aber auch für den Transport sowie das Lagern von Lebensmitteln.",
@@ -80,16 +84,24 @@
             ]
         },
         {
-            "name": "Thermobox für 20 kg Inhalt",
-            "description": "In der hochwertigen Thermobox ist das Eis 24h haltbar. Bei verschmutzten, beschädigten oder nicht zurück gegebenen Thermoboxen berechnen wir 30€ netto.",
+            "name": "Thermobox",
+            "description": "In der hochwertigen Thermobox ist das Eis 24h haltbar.",
+            "excerpt": "In der hochwertigen Thermobox ist das Eis 24h haltbar.",
             "image": "thermo.jpg",
             "color": "eisfuchs-blue",
             "textColor": "white",
-            "seoTitle": "Thermobox für 20 kg aus Leipzig bestellen",
+            "seoTitle": "Thermobox | Kühlbox | für 20 kg Eis aus Leipzig bestellen",
+            "shortContent": "Stabile, schwarze Thermoboxen zur gekühlten Lagerung.",
             "longContent": [
                 "Mit unseren stabilen, schwarzen Thermoboxen kannst du deine Eiswürfel oder dein Crushed Ice bedenkenlos kalt halten.",
                 "Sie fasst 20kg Eiswürfel oder 20kg Crushed Ice."
-            ]
+            ],
+            "pricing": {
+                "duration" : 24,
+                "netto": 8.40,
+                "brutto": 10.00 ,
+                "deposit": 50
+            }
         }
     ]
 }
