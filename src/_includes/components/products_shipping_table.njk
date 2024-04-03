@@ -15,8 +15,22 @@
                     <td>Auf Anfrage</td>
                     <td>Auf Anfrage</td>
                 {% else %}
-                    <td>{{ item.netto }}€</td>
-                    <td>{{ item.brutto }}€</td>
+                    {% if item.netto|string|length == 2 %}
+                        {% set priceNet = item.netto|string + ".00" %}
+                    {% elif item.netto|string|length == 4 %}
+                        {% set priceNet = item.netto|string + "0" %}
+                    {% else %}
+                        {% set priceNet = item.netto %}
+                    {% endif %}
+                    <td>{{ priceNet }}€</td>
+                    {% if item.brutto|string|length == 2 %}
+                        {% set priceBrut = item.brutto|string + ".00" %}
+                    {% elif item.brutto|string|length == 4 %}
+                        {% set priceBrut = item.brutto|string + "0" %}
+                    {% else %}
+                        {% set priceBrut = item.brutto %}
+                    {% endif %}
+                    <td>{{ priceBrut }}€</td>
                 {% endif %}
             </tr>   
         {% endfor %}
