@@ -1,0 +1,63 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "{{ product.name }}",
+  "description": " {{ product.longContent | join(' ') }} ",
+  "image": "{{site.url}}/img/{{ product.image }}",
+  "brand": {
+    "@type": "Brand",
+    "name": "Eisfuchs Leipzig"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "price": "1.25",
+      "availableAtOrFrom": "https://www.example.com/product-90g.html",
+      "seller": {
+        "@type": "Organization",
+        "name": "Your Store Name"
+      },
+      "itemCondition": "https://schema.org/NewCondition",
+      "quantity": {
+        "@type": "QuantitativeValue",
+        "unitCode": "g",
+        "value": 90
+      }
+    },
+    {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "price": "1.20",
+      "availableAtOrFrom": "https://www.example.com/product-290g.html",
+      "seller": {
+        "@type": "Organization",
+        "name": "Your Store Name"
+      },
+      "itemCondition": "https://schema.org/NewCondition",
+      "quantity": {
+        "@type": "QuantitativeValue",
+        "unitCode": "g",
+        "value": 290
+      }
+    },
+    {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "price": "1.13",
+      "availableAtOrFrom": "https://www.example.com/product-590g.html",
+      "seller": {
+        "@type": "Organization",
+        "name": "Your Store Name"
+      },
+      "itemCondition": "https://schema.org/NewCondition",
+      "quantity": {
+        "@type": "QuantitativeValue",
+        "unitCode": "g",
+        "value": 590
+      }
+    }
+  ]
+}
+</script>
