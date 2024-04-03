@@ -1,6 +1,6 @@
 ---
 title: Eisfuchs
-description: Wir produzieren und liefern Eiswürfel und Crushed Eis in bester Qualität. Du bist dir nicht sicher? Zögere nicht uns anzuschreiben, wir kommen mit einem Probepaket bei Dir vorbei.
+description: Wir produzieren und liefern massive Eiswürfel und Crushed Eis in bester Qualität aus Leipzig, für Leipzig.
 layout: layouts/home.njk
 eleventyNavigation:
   key: Home
@@ -45,8 +45,7 @@ eleventyNavigation:
             <!-- Product details -->
             <div class="flex-1 p-4 {{ 'bg-' + product.color }} text-{{ product.textColor }} flex flex-col justify-between">
               <h2 class="font-bold text-lg mb-2">{{ product.name }}</h2>
-              <p class="flex-1 text-sm italic mb-8">{{ product.price }}</p>
-              <p class="flex-1 text-sm">{{ product.description }}</p>
+              <p class="flex-1 text-sm">{{ product.excerpt }}</p>
             </a>
           </div>
         </div>
