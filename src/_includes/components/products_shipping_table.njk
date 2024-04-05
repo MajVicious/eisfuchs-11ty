@@ -22,7 +22,7 @@
                     {% else %}
                         {% set priceNet = item.netto %}
                     {% endif %}
-                    <td>{{ priceNet }}€</td>
+                    <td>{{ priceNet }} €</td>
                     {% if item.brutto|string|length == 2 %}
                         {% set priceBrut = item.brutto|string + ".00" %}
                     {% elif item.brutto|string|length == 4 %}
@@ -30,7 +30,7 @@
                     {% else %}
                         {% set priceBrut = item.brutto %}
                     {% endif %}
-                    <td>{{ priceBrut }}€</td>
+                    <td>{{ priceBrut }} €</td>
                 {% endif %}
             </tr>   
         {% endfor %}
