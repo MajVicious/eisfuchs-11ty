@@ -4,8 +4,9 @@
     {% if page.url.startsWith("/produkte/") %}
       {% if page.url.startsWith("/produkte/thermobox") %}
         {% include "./schema_product_thermobox.njk" %}
+      {% else %}
+        {% include "./schema_product.njk" %}
       {% endif %}
-      {% include "./schema_product.njk" %}
     {% endif %}
     <meta content="{{ pageDescription if pageDescription else description }}" name="description">
     <meta name="viewport" content="width=device-width, initial-scale=1">
