@@ -1,63 +1,33 @@
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
+  "@context": "http://schema.org/",
   "@type": "Product",
   "name": "{{ product.name }}",
-  "description": " {{ product.longContent | join(' ') }} ",
-  "image": "{{site.url}}/img/{{ product.image }}",
-  "brand": {
-    "@type": "Brand",
-    "name": "Eisfuchs Leipzig"
-  },
-  "offers": [
+  "description": "{{ product.longContent | join(" ") }}",
+  "image": "{{ site.url }}/img/{{ product.image }}",
+  "offers": [ {% for price in product.pricing %}{% if price.weight !== 600 %}
     {
       "@type": "Offer",
       "priceCurrency": "EUR",
-      "price": "1.25",
-      "availableAtOrFrom": "https://www.example.com/product-90g.html",
-      "seller": {
-        "@type": "Organization",
-        "name": "Your Store Name"
-      },
-      "itemCondition": "https://schema.org/NewCondition",
-      "quantity": {
-        "@type": "QuantitativeValue",
-        "unitCode": "g",
-        "value": 90
+      "availability": "http://schema.org/InStock",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "{{ price.brutto }}",
+        "priceCurrency": "EUR",
+        "billingIncrement": {{ product.units }},
+        "referenceQuantity": {
+          "@type": "QuantitativeValue",
+          "value": "1",
+          "unitCode": "KGM"
+        },
+        "eligibleQuantity": {
+          "@type": "QuantitativeValue",
+          "minValue": {{ price.min }},
+          "maxValue": {{ price.weight }},
+          "unitCode": "KGM"
+        }
       }
-    },
-    {
-      "@type": "Offer",
-      "priceCurrency": "EUR",
-      "price": "1.20",
-      "availableAtOrFrom": "https://www.example.com/product-290g.html",
-      "seller": {
-        "@type": "Organization",
-        "name": "Your Store Name"
-      },
-      "itemCondition": "https://schema.org/NewCondition",
-      "quantity": {
-        "@type": "QuantitativeValue",
-        "unitCode": "g",
-        "value": 290
-      }
-    },
-    {
-      "@type": "Offer",
-      "priceCurrency": "EUR",
-      "price": "1.13",
-      "availableAtOrFrom": "https://www.example.com/product-590g.html",
-      "seller": {
-        "@type": "Organization",
-        "name": "Your Store Name"
-      },
-      "itemCondition": "https://schema.org/NewCondition",
-      "quantity": {
-        "@type": "QuantitativeValue",
-        "unitCode": "g",
-        "value": 590
-      }
-    }
+    }{% if loop.index == loop.length - 1 %}{% else%},{% endif %}{% endif %}{% endfor %} 
   ]
 }
 </script>

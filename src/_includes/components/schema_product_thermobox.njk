@@ -1,0 +1,17 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "name": "{{ product.name }}",
+  "description": "{{ product.longContent | join(" ") }}",
+  "image": "{{ site.url }}/img/{{ product.image }}",
+  "offers":  {
+    "@type": "Offer",
+    "url": "{{ page.url }}",
+    "priceCurrency": "EUR",
+    "price": {{ product.pricing.brutto }},
+    "itemCondition": "https://schema.org/NewCondition",
+    "availability": "https://schema.org/InStock"
+    }
+}
+</script>
