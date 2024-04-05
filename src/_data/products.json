@@ -23,21 +23,25 @@
             ],
             "pricing": [
                 {
+                    "min": 10,
                     "weight": 90,
                     "netto": 1.25,
                     "brutto": 1.48
                 },
                 {
+                    "min": 100,
                     "weight": 290,
                     "netto": 1.20,
                     "brutto": 1.43
                 },
                 {
+                    "min": 300,
                     "weight": 590,
                     "netto": 1.13,
                     "brutto": 1.34
                 },
                 {
+                    "min": 600,
                     "weight": 600,
                     "netto": -1,
                     "brutto": -1
@@ -55,21 +59,25 @@
             "seoTitle": "Crushed Ice aus Leipzig bestellen",
             "pricing": [
                 {
+                    "min": 10,
                     "weight": 90,
                     "netto": 1.25,
                     "brutto": 1.48
                 },
                 {
+                    "min": 100,
                     "weight": 290,
                     "netto": 1.20,
                     "brutto": 1.43
                 },
                 {
+                    "min": 300,
                     "weight": 590,
                     "netto": 1.13,
                     "brutto": 1.34
                 },
                 {
+                    "min": 600,
                     "weight": 600,
                     "netto": -1,
                     "brutto": -1

@@ -1,0 +1,33 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "name": "{{ product.name }}",
+  "description": "{{ product.longContent | join(" ") }}",
+  "image": "{{ site.url }}/img/{{ product.image }}",
+  "offers": [ {% for price in product.pricing %}{% if price.weight !== 600 %}
+    {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "availability": "http://schema.org/InStock",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "{{ price.brutto }}",
+        "priceCurrency": "EUR",
+        "billingIncrement": {{ product.units }},
+        "referenceQuantity": {
+          "@type": "QuantitativeValue",
+          "value": "1",
+          "unitCode": "KGM"
+        },
+        "eligibleQuantity": {
+          "@type": "QuantitativeValue",
+          "minValue": {{ price.min }},
+          "maxValue": {{ price.weight }},
+          "unitCode": "KGM"
+        }
+      }
+    }{% if loop.index == loop.length - 1 %}{% else%},{% endif %}{% endif %}{% endfor %} 
+  ]
+}
+</script>
