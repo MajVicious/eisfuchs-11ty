@@ -1,20 +1,16 @@
 {
     "items": [
         {
-            "name": "test@example.com",
-            "link": "mailto:test@example.com"
+            "name": "info@eisfuchs-leipzig.de",
+            "link": "mailto:info@eisfuchs-leipzig.de"
         },
         {
-            "name": "Twitter",
-            "link": "https://twitter.com/…"
+            "name": "Instagram",
+            "link": "https://www.instagram.com/eisfuchs_leipzig/"
         },
         {
-            "name": "GitHub",
-            "link": "https://github.com/…"
-        },
-        {
-            "name": "CodePen",
-            "link": "https://codepen.io/…"
+            "name": "Facebook",
+            "link": "https://www.facebook.com/eisfuchs.leipzig"
         }
     ]
 }
