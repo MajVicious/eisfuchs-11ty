@@ -103,12 +103,18 @@
             "shortContent": "Stabile, schwarze Thermoboxen zur gekühlten Lagerung.",
             "longContent": [
                 "Mit unseren stabilen, schwarzen Thermoboxen kannst du deine Eiswürfel oder dein Crushed Ice bedenkenlos kalt halten.",
-                "Sie fasst 20kg Eiswürfel oder 20kg Crushed Ice."
+                "Sie fasst 20kg Eiswürfel oder 20kg Crushed Ice.",
+                "Deckel unkompliziert über Eck zu öffnen (Toplader).",
+                "Hergestellt aus einem extrem leichten, absolut robusten und vor allem hoch isolierenden Kunststoff-Material (EPP).",
+                "Attraktives Streifendesign.",
+                "Außenabmessungen: 60,0 x 40,0 x 30,5 cm & Innenabmessungen: 54,5 x 34,5 x 24,0 cm (Gastronorm-Standardmaß).",
+                "Fassungsvermögen: 45 L.",
+                "Selbst bei extremen Außentemperaturen ist unser Eis in der verschlossenen Thermobox nach 24 Stunden noch zu 90% erhalten."
             ],
             "pricing": {
-                "duration" : 24,
+                "duration": 24,
                 "netto": 8.40,
-                "brutto": 10.00 ,
+                "brutto": 10.00,
                 "deposit": 50
             }
         }
