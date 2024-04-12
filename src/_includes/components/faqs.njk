@@ -1,0 +1,26 @@
+<div class="divide-y divide-solid">
+  {% for faq in faqs %}
+    <div x-data="{ open: false }" class="mb-4">
+      <h3
+        @click="open = !open"
+        class="flex items-center justify-between w-full px-4 py-2 cursor-pointer font-light text-left text-lg hover:bg-eisfuchs-blue hover:text-white hover:font-bold">
+        {{ faq.question }}
+        <svg x-show="open" class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <path
+            fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.293l4.293-4.293a1 1 0 011.414 1.414L11.414 12l4.293 4.293a1 1 0 01-1.414 1.414L10
+              13.293l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 12L4.293 7.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"/>
+        </svg>
+        <svg x-show="!open" class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <path
+            fill-rule="evenodd"
+            d="M10 5a1 1 0 00-1.414 0l-4.293 4.293a1 1 0 001.414 1.414L10 6.857l4.293 4.293a1 1 0 001.414-1.414L11.414
+              6l4.293-4.293a1 1 0 00-1.414-1.414L10 5z"
+            clip-rule="evenodd"/>
+        </svg>
+      </h3>
+      <div x-show="open" class="p-4 font-light">{{ faq.answer }}</div>
+    </div>
+  {% endfor %}
+</div>
