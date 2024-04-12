@@ -8,6 +8,9 @@
         {% include "./schema_product.njk" %}
       {% endif %}
     {% endif %}
+    {% if page.url.startsWith("/faq/")%}
+      {% include "./schema_faq.njk" %}
+    {%endif%}
     <meta content="{{ pageDescription if pageDescription else description }}" name="description">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/assets/main.css" />

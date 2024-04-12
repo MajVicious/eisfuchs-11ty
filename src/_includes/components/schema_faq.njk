@@ -1,0 +1,16 @@
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [ {% for faq in faqs %}
+            {
+                "@type": "Question",
+                "name": "{{ faq.question}}",
+                "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "{{ faq.answer}}"
+                }
+            }{% if loop.index == loop.length %}{% else %},{% endif %}{% endfor %}
+        ]
+    }
+</script>
