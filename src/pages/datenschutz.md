@@ -12,11 +12,12 @@ eleventyNavigation:
 
 *Verantwortlicher für die Datenverarbeitung ist:*
 
-Sarah-Dinah Mattes
-Erich-Zeigner-Allee 53
-04229 Leizpig
-Deutschland
-info[at]eisfuchs-leipzig.de
+Eisfuchs - Dein Eis für Leipzig und Umgebung  
+Aline Lutz und Christiane Bachl GbR  
+Volbedingstraße 2  
+04357 Leipzig
+Telefon: +49 157 38307268  
+E-Mail: info@eisfuchs-leipzig.de
 
 Der Schutz Ihrer Privatsphäre ist für uns sehr wichtig. Nachstehend informieren wir Sie ausführlich über den Umgang mit Ihren Daten.
 
