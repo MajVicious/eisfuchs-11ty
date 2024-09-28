@@ -11,7 +11,7 @@
             {% for item in product.pricing %}
                 <tr>
                     <td>bis {{ item.weight }} kg</td>
-                    {% if item.weight == 600 %}
+                    {% if item.weight >= 90 %}
                         <td>Auf Anfrage</td>
                         <td>Auf Anfrage</td>
                     {% else %}
@@ -36,22 +36,8 @@
         <tbody>
             <tr>
                 <td>Verleih für {{ product.pricing.duration }} Stunden</td>
-                {% if product.pricing.netto|string|length == 2 %}
-                    {% set priceNet = product.pricing.netto|string + ".00" %}
-                {% elif product.pricing.netto|string|length == 3 %}
-                    {% set priceNet = product.pricing.netto|string + "0" %}
-                {% else %}
-                    {% set priceNet = product.pricing.netto %}
-                {% endif %}
-                <td>{{ priceNet }} €</td>
-                {% if product.pricing.brutto|string|length == 2 %}
-                    {% set priceBrut = product.pricing.brutto|string + ".00" %}
-                {% elif product.pricing.brutto|string|length == 3 %}
-                    {% set priceBrut = product.pricing.brutto|string + "0" %}
-                {% else %}
-                    {% set priceBrut = product.pricing.brutto %}
-                {% endif %}
-                <td>{{ priceBrut }} €</td>
+                <td>Auf Anfrage</td>
+                <td>Auf Anfrage</td>
             </tr>
         </tbody>
     </table>
