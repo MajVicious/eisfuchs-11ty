@@ -53,19 +53,13 @@ Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit
 
 Wir hosten die Inhalte unserer Website bei folgendem Anbieter:
 
-### Externes Hosting
+### Hosting & Content-Delivery-Network
 
-Diese Website wird extern gehostet. Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters / der Hoster gespeichert. Hierbei kann es sich v. a. um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, Websitezugriffe und sonstige Daten, die über eine Website generiert werden, handeln.
+Unsere Website wird von Netlify, einem Dienst der Netlify, Inc., 2325 3rd Street, Suite 215, San Francisco, CA 94107, USA, gehostet. Netlify speichert die von Ihnen auf unserer Website übermittelten Daten (z. B. IP-Adresse, Zeitpunkt des Zugriffs) auf ihren Servern in den USA. Diese Speicherung erfolgt zur Aufrechterhaltung des Betriebs und der Sicherheit unserer Website.
 
-Das externe Hosting erfolgt zum Zwecke der Vertragserfüllung gegenüber unseren potenziellen und bestehenden Kunden (Art. 6 Abs. 1 lit. b DSGVO) und im Interesse einer sicheren, schnellen und effizienten Bereitstellung unseres Online-Angebots durch einen professionellen Anbieter (Art. 6 Abs. 1 lit. f DSGVO). Sofern eine entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TTDSG, soweit die Einwilligung die Speicherung von Cookies oder den Zugriff auf Informationen im Endgerät des Nutzers (z. B. Device-Fingerprinting) im Sinne des TTDSG umfasst. Die Einwilligung ist jederzeit widerrufbar.
+Netlify verarbeitet diese Daten in unserem Auftrag und auf Grundlage eines Auftragsverarbeitungsvertrags gemäß Art. 28 DSGVO. Dabei kann es auch zu einer Übermittlung von Daten in die USA kommen, wobei Netlify durch den Abschluss sogenannter Standardvertragsklauseln (Standard Contractual Clauses, SCC) gemäß Art. 46 DSGVO ein angemessenes Datenschutzniveau sicherstellt.
 
-Unser(e) Hoster wird bzw. werden Ihre Daten nur insoweit verarbeiten, wie dies zur Erfüllung seiner Leistungspflichten erforderlich ist und unsere Weisungen in Bezug auf diese Daten befolgen.
-
-Wir setzen folgende(n) Hoster ein:
-
-ALL-INKL.COM
-Hauptstraße 68
-D-02742 Friedersdorf
+Weitere Informationen zur Datenverarbeitung durch Netlify finden Sie in der Datenschutzerklärung von Netlify: https://www.netlify.com/privacy/.
 
 ## 3\. Allgemeine Hinweise und Pflicht­informationen
 
