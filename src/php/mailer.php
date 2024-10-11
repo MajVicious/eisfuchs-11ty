@@ -47,7 +47,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->AltBody = "Ihr habt eine Nachricht von $name. Email: $email. Nachricht: $message";
 
         $mail->send();
-        echo 'Message has been sent';
+        
+        // Redirect to the Thank You page after the email is sent
+        header('Location: /danke/');
+        exit();  // Make sure to call exit after the redirect to stop further execution
+ 
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
