@@ -15,6 +15,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownLib);
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPassthroughCopy("src/img");
+  eleventyConfig.addPassthroughCopy("src/php");
   eleventyConfig.addPassthroughCopy({
     "./node_modules/@fortawesome/fontawesome-free/css/all.min.css":
       "assets/fontawesome.css",
