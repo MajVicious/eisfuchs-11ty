@@ -31,4 +31,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./_site # Adjust this to the directory where Eleventy outputs the site
-          server-dir: /eisfuchs-eleventy # Replace this with the path to your webspace root on All-INK
+          server-dir: /eisfuchs-eleventy/ # Replace this with the path to your webspace root on All-INK
