@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         //Server settings
         $mail->SMTPDebug = SMTP::DEBUG_SERVER;                         // Use this in production
         $mail->isSMTP();                                            //Send using SMTP
-        $mail->Host       = getenv('SMTP_HOST');               //Set the SMTP server to send through
+        $mail->Host       = 'w0122a15.kasserver.com';               //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
         $mail->Username   = getenv('SMTP_USER');                    //SMTP username
         $mail->Password   = getenv('SMTP_PASS');                     //SMTP password
