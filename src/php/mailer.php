@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     try {
         //Server settings
-        $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Use this in production
+        $mail->SMTPDebug = SMTP::DEBUG_OFF;                      // Use this in production
         $mail->isSMTP();                                            //Send using SMTP
         $mail->Host       = 'w0122a15.kasserver.com';               //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
