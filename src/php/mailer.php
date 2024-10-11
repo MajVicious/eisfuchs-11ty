@@ -12,7 +12,7 @@ use Dotenv\Dotenv;
 require 'vendor/autoload.php';
 
 // Initialize Dotenv
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);  // Use __DIR__ to reference the current directory
+$dotenv = Dotenv::createImmutable(__DIR__);  // Use __DIR__ to reference the current directory
 $dotenv->load();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
