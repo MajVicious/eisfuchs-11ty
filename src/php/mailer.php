@@ -12,6 +12,10 @@ require 'vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);  // Use __DIR__ to reference the current directory
 $dotenv->load();
 
+// Test to see if the environment variables are being loaded correctly
+echo 'SMTP_USER: ' . getenv('SMTP_USER') . '<br>';
+echo 'SMTP_PASS: ' . getenv('SMTP_PASS') . '<br>';
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars($_POST['name']);
     $email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
@@ -22,12 +26,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     try {
         //Server settings
-        $mail->SMTPDebug = SMTP::DEBUG_SERVER;                         // Use this in production
+        $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Use this in production
         $mail->isSMTP();                                            //Send using SMTP
         $mail->Host       = 'w0122a15.kasserver.com';               //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-        $mail->Username   = 'info@eisfuchs-leipzig.de';                    //SMTP username
-        $mail->Password   = 'ghpNgTsLQQs4xyyQ';                     //SMTP password
+        $mail->Username   = getenv('SMTP_USER');                    //SMTP username
+        $mail->Password   = getenv('SMTP_PASS');                    //SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
         $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
