@@ -5,16 +5,15 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
+// Import the Dotenv class from the vlucas/phpdotenv package
+use Dotenv\Dotenv;
+
 //Load Composer's autoloader
 require 'vendor/autoload.php';
 
 // Initialize Dotenv
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);  // Use __DIR__ to reference the current directory
 $dotenv->load();
-
-// Test to see if the environment variables are being loaded correctly
-echo 'SMTP_USER: ' . getenv('SMTP_USER') . '<br>';
-echo 'SMTP_PASS: ' . getenv('SMTP_PASS') . '<br>';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars($_POST['name']);
