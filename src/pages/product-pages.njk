@@ -30,7 +30,7 @@ eleventyComputed:
           <h2 class="pt-4 text-lg font-bold">Preise</h2>
           {% include "components/products_pricing_table.njk" %}
           {% if product.name !== "Thermobox" %}
-            <h2 class="pt-4 text-lg font-bold">Lieferkosten</h2>
+            <h2 class="pt-4 text-lg font-bold">Lieferkosten <span class="font-light">(innerhalb Leipzigs)</span></h2>
             {% include "components/products_shipping_table.njk" %}
           {% endif %}
         </div>

@@ -1,8 +1,8 @@
 {
     "costs": [
-        {"weight": 90, "netto": 15.00, "brutto": 17.90},
+        {"weight": 90, "netto": 15.00, "brutto": 17.85},
         {"weight": 290, "netto": 10.00, "brutto": 11.90},
-        {"weight": 590, "netto": 10.10, "brutto": 11.90},
+        {"weight": 590, "netto": 10.00, "brutto": 11.90},
         {"weight": 600, "netto": -1, "brutto": -1}
     ]
 }

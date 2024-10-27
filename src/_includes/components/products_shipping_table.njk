@@ -9,12 +9,12 @@
     <tbody>
         {% for item in shipping.costs %}
             <tr>
-                <td>bis {{ item.weight }} kg
-                </td>
                 {% if item.weight == 600 %}
+                    <td>ab {{ item.weight }} kg</td>
                     <td>Auf Anfrage</td>
                     <td>Auf Anfrage</td>
                 {% else %}
+                    <td>bis {{ item.weight }} kg</td>
                     {% if item.netto|string|length == 2 %}
                         {% set priceNet = item.netto|string + ".00" %}
                     {% elif item.netto|string|length == 4 %}

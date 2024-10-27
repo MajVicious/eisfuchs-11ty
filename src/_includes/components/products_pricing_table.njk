@@ -10,11 +10,12 @@
         <tbody>
             {% for item in product.pricing %}
                 <tr>
-                    <td>bis {{ item.weight }} kg</td>
                     {% if item.weight == 600 %}
+                        <td>ab {{ item.weight }} kg</td>
                         <td>Auf Anfrage</td>
                         <td>Auf Anfrage</td>
                     {% else %}
+                        <td>bis {{ item.weight }} kg</td>
                         <td>{{ item.netto }}{% if item.netto|string|length == 3 %}0 {% endif %} € / kg</td>
                         <td>{{ item.brutto }} {% if item.brutto|string|length == 3 %}0 {% endif %} € / kg</td>
                     {% endif %}
