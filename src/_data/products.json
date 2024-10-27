@@ -112,9 +112,9 @@
                 "Selbst bei extremen Außentemperaturen ist unser Eis in der verschlossenen Thermobox nach 24 Stunden noch zu 90% erhalten."
             ],
             "pricing": {
-                "duration": 24,
-                "netto": 8.40,
-                "brutto": 10.00,
+                "duration": 48,
+                "netto": 10.00,
+                "brutto": 11.90,
                 "deposit": 50
             }
         }
