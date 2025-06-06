@@ -13,7 +13,7 @@ eleventyNavigation:
 *Verantwortlicher für die Datenverarbeitung ist:*
 
 Eisfuchs - Dein Eis für Leipzig und Umgebung  
-Aline Lutz und Christiane Bachl GbR  
+Aline Lutz und Florin Kerber GbR  
 Volbedingstraße 2  
 04357 Leipzig
 Telefon: +49 157 38307268  
@@ -76,7 +76,7 @@ Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Ko
 Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
 
 Eisfuchs - Dein Eis für Leipzig und Umgebung  
-Aline Lutz und Christiane Bachl GbR  
+Aline Lutz und Florin Kerber GbR  
 Volbedingstraße 2  
 04357 Leipzig
 
